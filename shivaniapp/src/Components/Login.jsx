@@ -1,7 +1,7 @@
 function Login(){
     return(
         <div>
-            <input type="text"/>
+            <input type="text" placeholder="Enter Here"/>
         </div>
     )
 }

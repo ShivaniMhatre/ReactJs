@@ -7,27 +7,36 @@ import Welcome from './Components/Welcome';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
 import Footer from './Components/Footer';
+import Count from './Components/Count';
+import Section from './Components/Section';
+import NoDependency from './Components/NoDependency';
+import EmptyDependency from './Components/EmptyDependency';
+
+import MultipleDependency from './Components/MultipleDependency';
+import Type3dependency from './Components/Type3dependency';
 
 
 function App() {
   return (
-    
+
     <div>
       <Routes>
-        <Route path="/welcome" element={<Welcome/>}> 
-        </Route>
+        <Route path="/welcome" element={<Welcome />} />
+
       </Routes>
-      
-      <Navbar/>
+
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}> 
-        </Route>
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/login" element={<Login />}/>
+        <Route exact path="/counter" element={<Count/>}/>
+        <Route exact path="/section" element={<Section/>}/>
+        <Route exact path="/type1" element={<NoDependency/>}/>
+        <Route exact path="/type2" element={<EmptyDependency/>}/>
+        <Route exact path="/type3" element={<Type3dependency/>}/>
+        <Route exact path="/type4" element={<MultipleDependency/>}/>
       </Routes>
-      <Routes>
-        <Route path="/login" element={<Login/>}> 
-        </Route>
-      </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
