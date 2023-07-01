@@ -11,22 +11,28 @@ import Count from './Components/Count';
 import Section from './Components/Section';
 import NoDependency from './Components/NoDependency';
 import EmptyDependency from './Components/EmptyDependency';
-
 import MultipleDependency from './Components/MultipleDependency';
 import Type3dependency from './Components/Type3dependency';
+import DeclerativeWay from './Components/01-07/DeclerativeWay';
+import Map from './Components/01-07/Map';
+import StyledComp from './Components/01-07/StyledComp';
+import Wrapper from './Components/01-07/Wrapper';
+
+import Params from './Components/01-07/Params';
+import { useState } from 'react';
+import Singleproduct from './Components/01-07/Singleproduct';
+
+
 
 
 function App() {
+  const [myUsers, setMyUsers] = useState(["Rahul", "Krishan", "Manoj"])
   return (
 
     <div>
-      <Routes>
-        <Route path="/welcome" element={<Welcome />} />
-
-      </Routes>
-
       <Navbar />
       <Routes>
+      <Route path="/welcome" element={<Welcome />} />
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/login" element={<Login />}/>
         <Route exact path="/counter" element={<Count/>}/>
@@ -35,6 +41,13 @@ function App() {
         <Route exact path="/type2" element={<EmptyDependency/>}/>
         <Route exact path="/type3" element={<Type3dependency/>}/>
         <Route exact path="/type4" element={<MultipleDependency/>}/>
+        <Route exact path="/declerative" element={<DeclerativeWay/>}/>
+        <Route exact path='/map' element={<Map myUsers={myUsers} setMyUsers={setMyUsers} myName={"Shivani"} kuchBhi={["rudra","mugdha","yash","avdhootnpm"]} />} />
+        <Route exact path="/styledcomp" element={<StyledComp/>}/>
+        <Route exact path="/wrapper" element={<Wrapper/>}/>
+        <Route exact path="/single-product/:shivani" element={<Singleproduct/>}/>
+        <Route exact path="/params" element={<Params/>}/>
+
       </Routes>
       <Footer />
     </div>
