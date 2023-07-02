@@ -43,12 +43,12 @@ function App() {
         <Route exact path="/type2" element={<EmptyDependency/>}/>
         <Route exact path="/type3" element={<Type3dependency/>}/>
         <Route exact path="/type4" element={<MultipleDependency/>}/>
+        <Route exact path="/params" element={<Params/>}/>
+        <Route exact path="/single-product/:shivani" element={<Singleproduct/>}/>
         <Route exact path="/declerative" element={<DeclerativeWay/>}/>
         <Route exact path='/map' element={<Map myUsers={myUsers} setMyUsers={setMyUsers} myName={"Shivani"} kuchBhi={["rudra","mugdha","yash","avdhootnpm"]} />} />
         <Route exact path="/styledcomp" element={<StyledComp/>}/>
         <Route exact path="/wrapper" element={<Wrapper/>}/>
-        <Route exact path="/single-product/:shivani" element={<Singleproduct/>}/>
-        <Route exact path="/params" element={<Params/>}/>
         <Route exact path="/xyz" element={<Xyz/>}/>
         <Route exact path="/singlepro/:id" element={<Singlepro/>}/>
 
