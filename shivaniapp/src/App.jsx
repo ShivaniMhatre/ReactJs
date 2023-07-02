@@ -21,6 +21,8 @@ import Wrapper from './Components/01-07/Wrapper';
 import Params from './Components/01-07/Params';
 import { useState } from 'react';
 import Singleproduct from './Components/01-07/Singleproduct';
+import Xyz from './Components/02-07/Xyz';
+import Singlepro from './Components/02-07/Singlepro';
 
 
 
@@ -47,6 +49,8 @@ function App() {
         <Route exact path="/wrapper" element={<Wrapper/>}/>
         <Route exact path="/single-product/:shivani" element={<Singleproduct/>}/>
         <Route exact path="/params" element={<Params/>}/>
+        <Route exact path="/xyz" element={<Xyz/>}/>
+        <Route exact path="/singlepro/:id" element={<Singlepro/>}/>
 
       </Routes>
       <Footer />
