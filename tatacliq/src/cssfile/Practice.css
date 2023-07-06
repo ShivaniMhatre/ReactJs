@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mens_active{
+    width: 80%;
+    height: 700px;
+    border: 1px solid red;
+    position: absolute;
+    left: 80px;
+}
+.mens_inactive{
+    display: none;
+}

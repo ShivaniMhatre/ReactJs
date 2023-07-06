@@ -19,10 +19,15 @@ import StyledComp from './Components/01-07/StyledComp';
 import Wrapper from './Components/01-07/Wrapper';
 
 import Params from './Components/01-07/Params';
-import { useState } from 'react';
+import { Children, useState } from 'react';
 import Singleproduct from './Components/01-07/Singleproduct';
 import Xyz from './Components/02-07/Xyz';
 import Singlepro from './Components/02-07/Singlepro';
+import DynamicStyle from './Components/04-07/DynamicStyle';
+import DynamicClasses from './Components/04-07/DynamicClasses';
+import ChildrenProps from './Components/04-07/ChildrenProps';
+import Formone from './Components/06-07/Formone';
+import Multiple from './Components/practice/Multiple';
 
 
 
@@ -34,25 +39,33 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-      <Route path="/welcome" element={<Welcome />} />
-        <Route exact path="/" element={<Home/>} />
-        <Route exact path="/login" element={<Login />}/>
-        <Route exact path="/counter" element={<Count/>}/>
-        <Route exact path="/section" element={<Section/>}/>
-        <Route exact path="/type1" element={<NoDependency/>}/>
-        <Route exact path="/type2" element={<EmptyDependency/>}/>
-        <Route exact path="/type3" element={<Type3dependency/>}/>
-        <Route exact path="/type4" element={<MultipleDependency/>}/>
+        <Route path="/welcome" element={<Welcome />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/counter" element={<Count />} />
+        <Route exact path="/section" element={<Section />} />
+        <Route exact path="/type1" element={<NoDependency />} />
+        <Route exact path="/type2" element={<EmptyDependency />} />
+        <Route exact path="/type3" element={<Type3dependency />} />
+        <Route exact path="/type4" element={<MultipleDependency />} />
+        {/* Practice */}/
+        <Route exact path="/practice" element={<Multiple />} />
         {/* 01-07 */}
-        <Route exact path="/params" element={<Params/>}/>
-        <Route exact path="/single-product/:shivani" element={<Singleproduct/>}/>
-        <Route exact path="/declerative" element={<DeclerativeWay/>}/>
-        <Route exact path='/map' element={<Map myUsers={myUsers} setMyUsers={setMyUsers} myName={"Shivani"} kuchBhi={["rudra","mugdha","yash","avdhootnpm"]} />} />
-        <Route exact path="/styledcomp" element={<StyledComp/>}/>
-        <Route exact path="/wrapper" element={<Wrapper/>}/>
+        <Route exact path="/params" element={<Params />} />
+        <Route exact path="/single-product/:shivani" element={<Singleproduct />} />
+        <Route exact path="/declerative" element={<DeclerativeWay />} />
+        <Route exact path='/map' element={<Map myUsers={myUsers} setMyUsers={setMyUsers} myName={"Shivani"} kuchBhi={["rudra", "mugdha", "yash", "avdhootnpm"]} />} />
+        <Route exact path="/styledcomp" element={<StyledComp />} />
+        <Route exact path="/wrapper" element={<Wrapper />} />
         {/* 02-07 */}
-        <Route exact path="/xyz" element={<Xyz/>}/>
-        <Route exact path="/singlepro/:id" element={<Singlepro/>}/>
+        <Route exact path="/xyz" element={<Xyz />} />
+        <Route exact path="/singlepro/:id" element={<Singlepro />} />
+        {/* 04-07 */}
+        <Route exact path="/dynamicstyle" element={<DynamicStyle />} />
+        <Route exact path="/dynamicclasses" element={<DynamicClasses />} />
+        <Route exact path='/children-props' element={<ChildrenProps />} />
+        {/* 06-07 */}
+        <Route exact path="/form-one" element={<Formone />} />
 
       </Routes>
       <Footer />

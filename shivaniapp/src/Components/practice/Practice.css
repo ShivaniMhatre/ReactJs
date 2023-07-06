@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.multiple{
+    width: 80%;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.product{
+    width: 20%;
+    height:350px;
+    border: 1px solid black;
+}
+.pro_img{
+    width: 100%;
+    height: 230px;
+    border-bottom: 1px solid green;
+}
+.rate{
+    width: 20%;
+    border: 1px solid gray;
+    display: flex;
+}

@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#men{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    background-color: rgb(236, 236, 236);
+}
+#menimg{
+    width: 100%;
+    height: 350px;
+}
+#menimg>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+#men_cate{
+    width: 80%;
+    height: 120px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.men_cate{
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+}
+.men_cate>img{
+    width: 100%;
+    height: 100%;
+}
+#men_pay{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+}
+.men_pay{
+    width: 50%;
+    height: 100%;
+    border: 1px solid white;
+}
+#deal{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+}
+#deal>img{
+    width: 100%;
+    height: 100%;
+}
+#bestseller{
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.bestseller{
+    width: 43%;
+    height: 300px;
+    margin: 30px;
+    /* border: 1px solid red; */
+}
+.bestseller>img{
+    width: 100%;
+    height: 100%;
+}
+#deal_central{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+}
+#deal_central>img{
+    width: 100%;
+    height: 100%;
+}
+#brand{
+    width: 90%;
+    /* height: 150px; */
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.brand{
+    width: 18%;
+    height: 250px;
+    /* border: 1px solid red; */
+}
+.brand>img{
+    width: 100%;
+    height: 100%;
+}
+#offer{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+}
+#offer>img{
+    width: 100%;
+    height: 100%;
+}
+#offer_detail{
+    width: 90%;
+    /* height: 150px; */
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.offer_detail{
+    width: 19%;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+.offer_detail>img{
+    width: 100%;
+    height: 100%;
+}
+#ss23{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+}
+#ss23>img{
+    width: 100%;
+    height: 100%;
+}
+#collection{
+    width: 90%;
+    /* height: 150px; */
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.collection{
+    width: 19%;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+.collection>img{
+    width: 100%;
+    height: 100%;
+}
+#value{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+}
+#value>img{
+    width: 100%;
+    height: 100%;
+}
+#store{
+    width: 90%;
+    /* height: 150px; */
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.store{
+    width: 19%;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+.store>img{
+    width: 100%;
+    height: 100%;
+}
+#level{
+    width: 80%;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+}
+#level>img{
+    width: 100%;
+    height: 100%;
+}
+#levelup{
+    width: 90%;
+    /* height: 150px; */
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.levelup{
+    width: 45%;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+.levelup>img{
+    width: 100%;
+    height: 100%;
+}
