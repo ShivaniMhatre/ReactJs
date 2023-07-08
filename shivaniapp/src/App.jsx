@@ -27,7 +27,8 @@ import ChildrenProps from './Components/04-07/ChildrenProps';
 import Formone from './Components/06-07/Formone';
 import Multiple from './Components/practice/Multiple';
 import FormSingleState from './Components/08-07/FormSingleState';
-import UseCallback from './Components/08-07/UseCallback';
+import Callback from './Components/08-07/Callback';
+
 
 
 
@@ -68,7 +69,7 @@ function App() {
         <Route exact path="/form-one" element={<Formone />} />
         {/* 08-07 */}
         <Route exact path="/form-single-state" element={<FormSingleState/>}/>
-        <Route exact path="/use-callback" element={<UseCallback/>}/>
+        <Route exact path="/use-callback" element={<Callback/>}/>
       </Routes>
       <Footer />
     </div>
