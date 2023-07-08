@@ -1,5 +1,6 @@
 import React from 'react'
 import data from './../../data/practice.json'
+import './../practice/Practice.css'
 
 const Multiple = () => {
     return (
@@ -19,8 +20,6 @@ const Multiple = () => {
                     </div>
                 </div>
             ))}
-
-
         </div>
     )
 }

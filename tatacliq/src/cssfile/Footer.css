@@ -34,10 +34,23 @@
     display: flex;
     justify-content: space-around;
 }
-#footer_content>div>h5,p{
+#footer_content>div>h5{
     padding: 5px 15px;
 }
-#footer_content>div>p{
+#first>p{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+#sec>p{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+#third>p{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+#fourth>p{
+    padding: 5px 15px;
     font-size: 14px;
 }
 #first{

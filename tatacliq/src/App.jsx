@@ -7,6 +7,7 @@ import Footer from './TatacliqPages/Footer';
 import Men from './TatacliqPages/Men';
 import Pactice from './TatacliqPages/Pactice';
 import Cate_dropdown from './TatacliqPages/Cate_dropdown';
+import Multiple_pro from './TatacliqPages/Multiple_pro';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/men" element={<Men/>}/>
         <Route exact path="/cate_dropdown" element={<Cate_dropdown/>}/>
         <Route exact path="/practice" element={<Pactice/>}/>
+        <Route exact path="/multiple-pro" element={<Multiple_pro/>}/>
       </Routes>
       <Footer />
     </div>

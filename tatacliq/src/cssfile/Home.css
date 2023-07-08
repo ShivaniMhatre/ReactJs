@@ -13,6 +13,12 @@
     /* border: 1px solid black; */
     background-color: rgb(236, 236, 236);
 }
+#home>div:hover{
+    cursor: pointer;
+    transition: 400ms;
+    /* padding: 2%; */
+    /* transform: scale(1.06); */
+}
 
 #slide {
     width: 100%;

@@ -1,7 +1,12 @@
 import React from 'react'
 import './../../src/cssfile/Home.css'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const redirect=useNavigate();
+  function navi(){
+    redirect('/men')
+  }
   return (
     <div id="home">
       <div id="slide">
@@ -17,7 +22,7 @@ const Home = () => {
         <div>
           <img src='https://assets.tatacliq.com/medias/sys_master/images/47445466152990.jpg' />
         </div>
-        <div>
+        <div onClick={navi}>
           <img src='https://assets.tatacliq.com/medias/sys_master/images/47445466218526.jpg' />
         </div>
         <div>

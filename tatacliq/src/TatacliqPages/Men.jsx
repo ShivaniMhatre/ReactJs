@@ -1,13 +1,15 @@
 import React from 'react'
 import './../../src/cssfile/Men.css'
+import { useNavigate } from 'react-router-dom'
 const Men = () => {
+    const redirect=useNavigate();
   return (
     <div id="men">
         <div id="menimg">
            <img src="https://assets.tatacliq.com/medias/sys_master/images/47513566183454.jpg"/>
         </div>
         <div id="men_cate">
-            <div className='men_cate'>
+            <div className='men_cate' onClick={()=>redirect('/multiple-pro')}>
                 <img src="https://assets.tatacliq.com/medias/sys_master/images/47396042702878.jpg"/>
             </div>
             <div className='men_cate'>

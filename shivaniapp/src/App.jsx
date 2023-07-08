@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
-
 import Welcome from './Components/Welcome';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
@@ -17,9 +16,8 @@ import DeclerativeWay from './Components/01-07/DeclerativeWay';
 import Map from './Components/01-07/Map';
 import StyledComp from './Components/01-07/StyledComp';
 import Wrapper from './Components/01-07/Wrapper';
-
 import Params from './Components/01-07/Params';
-import { Children, useState } from 'react';
+import { useState } from 'react';
 import Singleproduct from './Components/01-07/Singleproduct';
 import Xyz from './Components/02-07/Xyz';
 import Singlepro from './Components/02-07/Singlepro';
@@ -28,6 +26,8 @@ import DynamicClasses from './Components/04-07/DynamicClasses';
 import ChildrenProps from './Components/04-07/ChildrenProps';
 import Formone from './Components/06-07/Formone';
 import Multiple from './Components/practice/Multiple';
+import FormSingleState from './Components/08-07/FormSingleState';
+import UseCallback from './Components/08-07/UseCallback';
 
 
 
@@ -66,7 +66,9 @@ function App() {
         <Route exact path='/children-props' element={<ChildrenProps />} />
         {/* 06-07 */}
         <Route exact path="/form-one" element={<Formone />} />
-
+        {/* 08-07 */}
+        <Route exact path="/form-single-state" element={<FormSingleState/>}/>
+        <Route exact path="/use-callback" element={<UseCallback/>}/>
       </Routes>
       <Footer />
     </div>
