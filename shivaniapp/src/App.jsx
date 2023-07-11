@@ -28,6 +28,9 @@ import Formone from './Components/06-07/Formone';
 import Multiple from './Components/practice/Multiple';
 import FormSingleState from './Components/08-07/FormSingleState';
 import Callback from './Components/08-07/Callback';
+import UseMemo from './Components/09-07/UseMemo';
+import UseReducer from './Components/09-07/UseReducer';
+
 
 
 
@@ -70,6 +73,9 @@ function App() {
         {/* 08-07 */}
         <Route exact path="/form-single-state" element={<FormSingleState/>}/>
         <Route exact path="/use-callback" element={<Callback/>}/>
+        {/* 09-07 */}
+        <Route exact path="/usememo" element={<UseMemo/>}/>
+        <Route exact path="/usereducer" element={<UseReducer/>}/>
       </Routes>
       <Footer />
     </div>
