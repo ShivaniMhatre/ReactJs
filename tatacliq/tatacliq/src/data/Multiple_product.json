@@ -1,0 +1,119 @@
+[
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000015191655_437Wx649H_202211060047171.jpeg",
+        "id": "1",
+        "name": "U.S. POLO Assn.",
+        "detail": "Sketchers Women's D'Lites/Sport Black Sneakers",
+        "dis_price": "₹2299",
+        "rate": "2.8"
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i9/437Wx649H/MP000000016373929_437Wx649H_202302042021191.jpeg",
+        "id": "2",
+        "name": "U.S. POLO Assn.",
+        "detail": "U.S. Polo Assn. Ivory Cotton Regular Fit Polo T-Shirt",
+        "dis_price": "₹1899",
+        "rate": "4"
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000015298354_437Wx649H_202211152202081.jpeg",
+        "id": "3",
+        "name": "Levi's",
+        "detail": "Levis 512 Mid Indigo Slim Fit Jeans",
+        "dis_price": "₹1855",
+        "price": "₹3199",
+        "rate": "4.3",
+        "stock": "Limited Stock!"
+        
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000014765428_437Wx649H_202210061555121.jpeg",
+        "id": "4",
+        "name": "United Colors Of Benetton",
+        "detail": "United Colors Of Benetton Maroon Polo Tshirt",
+        "dis_price": "₹1034",
+        "price": "₹2299",
+        "rate": "3",
+        "stock": "Limited Stock!"
+        
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000015247442_437Wx649H_202211110452311.jpeg",
+        "id": "5",
+        "name": "Jack & Jones",
+        "detail": "Jack & Jones Navy Blue Cotton Slim Fit Polo T-shirt",
+        "dis_price": "₹764",
+        "price": "₹1699",
+        "rate": "4.5",
+        "stock":"Limited Stock!"
+       
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000014309997_437Wx649H_202209012128361.jpeg",
+        "id": "6",
+        "name": "United Colors Of Benetton",
+        "detail": "United Colors Of Benetton Blue Lightly Washed Jeans",
+        "dis_price": "₹1574",
+        "price": "₹3499",
+        "rate": "5"
+        
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i9/437Wx649H/MP000000015591343_437Wx649H_202212081003121.jpeg",
+        "id": "7",
+        "name": "U.S. POLO Assn.",
+        "detail": "U.S.POLO.Assn.Dark Blue Cotton Skinny Fit Jeans",
+        "dis_price": "₹2309",
+        "price": "₹3299",
+        "rate": "4.6"
+        
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000014073271_437Wx649H_202208071257521.jpeg",
+        "id": "8",
+        "name": "United Colors Of Benetton",
+        "detail": "United Colors Of Benetton Blaclk Skinny Lightly Washed Jeans",
+        "dis_price": "₹1574",
+        "price":"3499",
+        "rate": "3.3",
+        "stock":"Limited Stock!"
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i8/437Wx649H/MP000000014428153_437Wx649H_202209112250181.jpeg",
+        "id": "9",
+        "name": "U.S. POLO Assn.",
+        "detail": "U.S. Polo Assn. Dark Green Cotton Regular Fit Printed Polo T-Shirt",
+        "dis_price": "₹1599",
+       
+        "rate": "3"
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i9/437Wx649H/MP000000016361149_437Wx649H_202302032327011.jpeg",
+        "id": "10",
+        "name": "Red Tape",
+        "detail": "Red Tape Brown Regular Fit Cotton Shirt",
+        "dis_price": "₹813",
+        "price":"3699",
+        "rate": "4.6"
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i9/437Wx649H/MP000000016551800_437Wx649H_202302161558471.jpeg",
+        "id": "11",
+        "name": "Pepe Jeans",
+        "detail": "Pepe Jeans ELIAS Multicolor Regular Fit Check Cotton Shirt",
+        "dis_price": "₹1429",
+        "price": "₹2599",
+        "rate": "4.7",
+        "stock":"Limited Stock!"
+       
+    },
+    {
+        "image": "https://img.tatacliq.com/images/i10/437Wx649H/MP000000016808982_437Wx649H_202303110038341.jpeg",
+        "id": "12",
+        "name": "ETA",
+        "detail": "ETA By Westside Light Brown Slim-Fit Chions",
+        "dis_price": "₹1499",
+        
+        "rate": "3.3"
+    }
+]

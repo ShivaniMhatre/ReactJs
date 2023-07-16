@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import Welcome from './Components/Welcome';
 import Navbar from './Components/Navbar';
-import Login from './Components/Login';
 import Footer from './Components/Footer';
 import Count from './Components/Count';
 import Section from './Components/Section';
@@ -30,6 +29,12 @@ import FormSingleState from './Components/08-07/FormSingleState';
 import Callback from './Components/08-07/Callback';
 import UseMemo from './Components/09-07/UseMemo';
 import UseReducer from './Components/09-07/UseReducer';
+import ProductFromBackend from './Components/11-07/ProductFromBackend';
+import Product from './Components/13-07/Product';
+import Practice_Single from './Components/practice/Practice_Single';
+import Practice_Multiple from './Components/practice/Practice_Multiple';
+import Login from './Components/15-07/Login';
+import Register from './Components/15-07/Register';
 
 
 
@@ -45,7 +50,6 @@ function App() {
       <Routes>
         <Route path="/welcome" element={<Welcome />} />
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/login" element={<Login />} />
         <Route exact path="/counter" element={<Count />} />
         <Route exact path="/section" element={<Section />} />
         <Route exact path="/type1" element={<NoDependency />} />
@@ -54,6 +58,8 @@ function App() {
         <Route exact path="/type4" element={<MultipleDependency />} />
         {/* Practice */}/
         <Route exact path="/practice" element={<Multiple />} />
+        <Route exact path="/ps:id" element={<Practice_Single />} />
+        <Route exact path="/pm" element={<Practice_Multiple/>} />
         {/* 01-07 */}
         <Route exact path="/params" element={<Params />} />
         <Route exact path="/single-product/:shivani" element={<Singleproduct />} />
@@ -71,11 +77,18 @@ function App() {
         {/* 06-07 */}
         <Route exact path="/form-one" element={<Formone />} />
         {/* 08-07 */}
-        <Route exact path="/form-single-state" element={<FormSingleState/>}/>
-        <Route exact path="/use-callback" element={<Callback/>}/>
+        <Route exact path="/form-single-state" element={<FormSingleState />} />
+        <Route exact path="/use-callback" element={<Callback />} />
         {/* 09-07 */}
-        <Route exact path="/usememo" element={<UseMemo/>}/>
-        <Route exact path="/usereducer" element={<UseReducer/>}/>
+        <Route exact path="/usememo" element={<UseMemo />} />
+        <Route exact path="/usereducer" element={<UseReducer />} />
+        {/* 11-07 */}
+        <Route exact path="/product-from-backend" element={<ProductFromBackend />} />
+        {/* 13-07 */}
+        <Route exact path='/product/:id' element={<Product />} />
+        {/* 15-07 */}
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </div>

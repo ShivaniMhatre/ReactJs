@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* #navbar{
+    display: none;
+} */
+#profile_body{
+    width: 100%;
+    border: 1px solid white;
+    /* margin-top: 100px; */
+    background-color:rgb(236,236,236) ;
+}
+#inner_profile_body{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+#pro_left{
+    width: 17%;
+    /* border: 1px solid red; */
+    background-color: white;
+    border-radius: 5px;
+}
+#menu{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(250, 249, 249);
+    padding: 5px ;
+}
+#inner_pro_left{
+    width:90%;
+    /* border: 1px solid green; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu>div:nth-child(1){
+    width: 15%;
+    height: 15px;
+    padding-left: 14px;
+    /* border: 1px solid blue; */
+    /* margin: 5px; */
+}
+.menu>div:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+}
+.menu>div:nth-child(2){
+    width: 70%;
+    height: 24px;
+    /* border: 1px solid blue; */
+    margin: 5px;
+    font-size: 13px;
+}
+#pro_mid{
+    width: 60%;
+    /* border: 1px solid red; */
+    background-color: white;
+}
+#general_info{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(250, 249, 249);
+    border-radius: 5px;
+    padding: 10px;
+}
+#inner_pro_mid{
+    width:90%;
+    /* border: 1px solid green; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#basic{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+#f_name{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-top: 10px;
+}
+#Fname{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+.Input{
+    width: 75%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.Input>input{
+    width: 100%;
+    height: 100%;
+}
+
+#l_name{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-top: 10px;
+
+}
+#Lname{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+#dob{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-top: 10px;
+}
+#Dateob{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+#contact{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+#mob{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-top: 10px;
+
+}
+#mobile{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+#email{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-top: 10px;
+
+}
+#Email{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+#personal{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#gender{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-top: 10px;
+
+}
+#Gender{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+#pro_right{
+    width: 20%;
+    /* border:1px solid red */
+}
+
+#inner_pro_right{
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
+    margin-top: 40px;
+    background-color: white;
+}
+#right_circle{
+    width: 30%;
+    height: 60px;
+    border-radius: 100%;
+    /* background-color: black; */
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(236,236,236);
+}
+.heading{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.content{
+    width: 99%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.heading>span:nth-child(2){
+    color: red;
+}

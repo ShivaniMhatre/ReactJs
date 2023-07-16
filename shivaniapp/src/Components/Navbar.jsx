@@ -6,7 +6,7 @@ const Navbar = () => {
     
     return (
         <div style={{ position: 'relative' }}>
-            <h1 >Navbar</h1>
+            <h1 style={{backgroundColor:'skyblue'}}>Navbar</h1>
             {/* style={{ backgroundColor: "skyblue" }} */}
         </div>
     )

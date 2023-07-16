@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: semibold;
+}
+/* #navbar{
+    display: none;
+} */
+
+#cart_nav{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(51,52,54);
+    /* position: relative;
+    position: fixed;
+    z-index: 1; */
+}
+#inner_cartnav{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+#cart_logo{
+    width: 8%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#cart_logo>img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#cart_profile{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+    align-items: center;
+    display: flex;
+}
+#profile_circle{
+    width: 10%;
+    height: 40%;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 10px;
+}
+#profile_circle>img{
+    width: 100%;
+    height: 100%;
+}
+#down_arrow{
+    padding-left: 15px;
+}
+#cart_nav2{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid black; */
+    /* top: 55px;  */
+}
+#inner_cartnav2{
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#mybag{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#pincode{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#pincode>span{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+#pincode>span>p:nth-child(1){
+    font-size: 13px;
+    font-weight: 600;
+}
+#pincode>span>p:nth-child(2){
+    text-decoration: underline;
+    font-size: 12px;
+}
