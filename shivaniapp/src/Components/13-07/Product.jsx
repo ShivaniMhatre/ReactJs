@@ -3,14 +3,15 @@ import { useNavigate, useParams } from 'react-router-dom';
 import './../../../src/Components/13-07/Product.css'
 
 const Product = () => {
-    const [products, setProducts] = useState([]);
-    const [CurrentUserEmail, setCurrentUserEmail] = useState("");
-    const [singleproduct, setSingleProduct] = useState({});
     const [isUserLoggedin, setUserLoggedin] = useState(false);
+    const [CurrentUserEmail, setCurrentUserEmail] = useState("");
+    const [products, setProducts] = useState([]);
+    const [singleproduct, setSingleProduct] = useState({});
+    const { id } = useParams();
     const router = useNavigate();
 
-    const { id } = useParams();
-    console.log(products, "-products")
+    // console.log(products, "-products")
+
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())
@@ -32,7 +33,11 @@ const Product = () => {
             setCurrentUserEmail(user.email)
         }
     }, [])
-    console.log(singleproduct, "-singleproduct")
+
+    // console.log(singleproduct, "-singleproduct")
+
+
+    
     function addCart() {
         if (isUserLoggedin) {
             const users = JSON.parse(localStorage.getItem("Users"));
@@ -40,6 +45,7 @@ const Product = () => {
             for (var i = 0; i < users.length; i++) {
                 if (users[i].email == CurrentUserEmail) {
                     users[i].cart.push(singleproduct);
+                    // console.log(singleproduct,"-cart")
                     localStorage.setItem("Users", JSON.stringify(users));
                     break;
                 }
@@ -54,7 +60,7 @@ const Product = () => {
         localStorage.removeItem("Current-user");
         setUserLoggedin(false);
         alert("Logout Successfull.")
-        router('/product-from-backend')
+        router('/login')
     }
 
     return (

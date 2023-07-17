@@ -35,7 +35,6 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <div id='register'>
           <h1>Login</h1>
-
           <div className='Input'>
             <label>Email : </label><br />
             <input type='email' name='email' onChange={handleChange} /><br />
@@ -46,6 +45,9 @@ const Login = () => {
           </div>
           <div id='btn'>
             <input type='submit' value='Login' />
+          </div>
+          <div id='text' onClick={()=>redirect('/register')}>
+            <span><u>New User?</u></span>
           </div>
         </div>
       </form>

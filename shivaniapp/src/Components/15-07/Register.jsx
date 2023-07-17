@@ -3,7 +3,7 @@ import { redirect, useNavigate } from 'react-router-dom'
 import './../../../src/Components/15-07/Register.css'
 
 const Register = () => {
-    const [userData, setUserData] = useState({ name: '', email: '', password: '' })
+    const [userData, setUserData] = useState({ name: "", email: "", password: "" })
     const redirect = useNavigate();
 
     const handleChange = (event) => {
@@ -12,16 +12,16 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (userData.name && userData.email && userData.password) {
-            const array = JSON.parse(localStorage.getItem("Users")) || []
+            const array = JSON.parse(localStorage.getItem("Users")) || [];
             const userDataObj = {
                 name: userData.name,
                 email: userData.email,
                 password: userData.password,
                 cart: []
             };
-            console.log(array,"-array")
+            console.log(array, "-array")
             array.push(userDataObj);
-            console.log(array,"array after push")
+            console.log(array, "array after push")
             localStorage.setItem("Users", JSON.stringify(array));
             alert("Registration Successfull...")
             redirect('/login')
@@ -50,6 +50,9 @@ const Register = () => {
                     </div>
                     <div id='btn'>
                         <input type='submit' value='Register' />
+                    </div>
+                    <div id='text' onClick={() => redirect('/login')}>
+                        <span><u>Already have an Account</u></span>
                     </div>
                 </div>
             </form>

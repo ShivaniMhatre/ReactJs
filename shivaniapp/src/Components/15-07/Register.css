@@ -38,3 +38,13 @@
     outline: none;
     border-radius: 50px;
 }
+#text{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    text-align: center;
+    color: brown;
+    font-size: small;
+    cursor: pointer;
+}
