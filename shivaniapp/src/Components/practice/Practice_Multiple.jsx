@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react'
+import  mydata from './../../../src/data/practice.json'
 import { useNavigate } from 'react-router-dom'
-import  './../../../src/data/practice.json'
+
 
 const Practice_Multiple = () => {
-    const [product,setProduct]=useState([]);
-    // const route=useNavigate()
+  const route=useNavigate();
 
-    useEffect(() => {
-        fetch('practice.json')
-            // .then(res => res.json())
-            .then(json => setProduct(json))
-    }, [])
+    const redirect=(id)=>{
+      route( `/ps/${id}`)
+    }
   return (
-    <div>
-        {product.map((pro)=>(
-            <h1>{pro.id}</h1>
+    <div style={{display:'flex'}}>
+        {mydata.map((pro)=>(
+          <div onClick={() => route(pro.id)}>           
+             <h1>{pro.id}</h1>
+             <img src={pro.image} style={{width:'30%',height:'50vh'}}/>
+             <h3>{pro.detail}</h3>
+          </div>
         ))}
-        
     </div>
   )
 }

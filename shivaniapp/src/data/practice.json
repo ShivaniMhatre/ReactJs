@@ -4,20 +4,24 @@
         "detail":"Apple",
         "Price":"120000",
         "quntity":"10",
-        "rate":"4"
+        "rate":"4",
+        "image":"https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-appletradein-var1.image.large_2x.png"
     },
     {
         "id":"2",
-        "detail":"Apple",
+        "detail":"adidas",
         "Price":"120000",
         "quntity":"10",
-        "rate":"4"
+        "rate":"4",
+        "image":"https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-appletradein-var1.image.large_2x.png"
     },
     {
-        "id":"2",
-        "detail":"Apple",
+        "id":"3",
+        "detail":"ApplBoate",
         "Price":"120000",
-        "quntity":"10","rate":"4"
+        "quntity":"10",
+        "rate":"4",
+        "image":"https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-appletradein-var1.image.large_2x.png"
     }
 
 ]
