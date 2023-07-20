@@ -14,7 +14,7 @@ const Practice_Single = () => {
 
   console.log(res);
   return (
-    <div>
+    <div style={{margin:'20vh'}}>
       {/* {res.map((p)=>{
         return <h1>{p.detail}</h1>
       })

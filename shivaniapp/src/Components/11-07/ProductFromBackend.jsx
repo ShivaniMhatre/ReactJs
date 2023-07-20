@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import './../../../src/Components/ProductFromBAckend.css'
+import './../../../src/Components/11-07/ProductFromBAckend.css'
 
 
 const ProductFromBackend = () => {
@@ -18,7 +18,7 @@ const ProductFromBackend = () => {
         router(`/product/${id}`)
     }
     return (
-        <div>
+        <div style={{margin:"15vh"}}>
             <h1>Products : </h1>
             {products.length ? <div id='pro_backend'>
                 {products.map((pro) => (

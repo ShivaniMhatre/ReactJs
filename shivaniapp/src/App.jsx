@@ -35,6 +35,7 @@ import Practice_Single from './Components/practice/Practice_Single';
 import Practice_Multiple from './Components/practice/Practice_Multiple';
 import Login from './Components/15-07/Login';
 import Register from './Components/15-07/Register';
+import Cart from './Components/18-07/Cart';
 
 
 
@@ -58,8 +59,9 @@ function App() {
         <Route exact path="/type4" element={<MultipleDependency />} />
         {/* Practice */}/
         <Route exact path="/practice" element={<Multiple />} />
+        <Route exact path="/pm" element={<Practice_Multiple/>} />
         <Route exact path="/ps/:id" element={<Practice_Single />} />
-        <Route exact path="/ps" element={<Practice_Multiple/>} />
+        
         {/* 01-07 */}
         <Route exact path="/params" element={<Params />} />
         <Route exact path="/single-product/:shivani" element={<Singleproduct />} />
@@ -89,6 +91,8 @@ function App() {
         {/* 15-07 */}
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
+        {/* 18-07 */}
+        <Route exact path="/cart" element={<Cart/>}/>
       </Routes>
       <Footer />
     </div>

@@ -19,12 +19,23 @@ const Register = () => {
                 password: userData.password,
                 cart: []
             };
-            console.log(array, "-array")
-            array.push(userDataObj);
-            console.log(array, "array after push")
-            localStorage.setItem("Users", JSON.stringify(array));
-            alert("Registration Successfull...")
-            redirect('/login')
+            var flag = false;
+            for (var i = 0; i < array.length; i++) {
+                if (array[i].email == userData.email) {
+                    flag = true;
+                    alert("Already Exist!!!!")
+                    redirect('/register')
+                }
+
+            }
+            if (flag == false) {
+                console.log(array, "-array")
+                array.push(userDataObj);
+                // console.log(array, "array after push")
+                localStorage.setItem("Users", JSON.stringify(array));
+                alert("Registration Successfull...")
+                redirect('/login')
+            }
         }
         else {
             alert("Fill Your Data....")
@@ -32,7 +43,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div style={{ margin: '10vh' }}>
             <form onSubmit={handleSubmit}>
                 <div id='register'>
                     <h1>Register</h1>

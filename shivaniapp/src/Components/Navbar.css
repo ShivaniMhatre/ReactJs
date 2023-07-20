@@ -1,10 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+ 
     box-sizing: border-box;
+    cursor: pointer;;
 }
 #navbar{
+    width: 100%;
     display:flex;
     background-color:skyblue;
-    height:10vh
+    height:10vh;
+    position: fixed;
+    /* border: 1px solid red; */
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav_logo{
+    width: 10%;
+    /* height: 100%; */
+    text-align: center;
+    /* border: 1px solid black; */
+}
+#nav_pro{
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: right;
 }

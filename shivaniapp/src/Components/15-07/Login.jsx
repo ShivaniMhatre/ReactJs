@@ -27,11 +27,11 @@ const Login = () => {
       localStorage.setItem("Current-user", JSON.stringify(userData))
       alert("Login Successfull....");
       setUserData({email: '', password: ''})
-      redirect('/product-from-backend')
+      redirect('/')
     }
   }
   return (
-    <div>
+    <div style={{margin:'10vh'}}>
       <form onSubmit={handleSubmit}>
         <div id='register'>
           <h1>Login</h1>

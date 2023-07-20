@@ -37,7 +37,7 @@ const Product = () => {
     // console.log(singleproduct, "-singleproduct")
 
 
-    
+
     function addCart() {
         if (isUserLoggedin) {
             const users = JSON.parse(localStorage.getItem("Users"));
@@ -50,6 +50,9 @@ const Product = () => {
                     break;
                 }
             }
+
+            alert("Product Added Successfully To Your Cart....")
+
         } else {
             alert("You cant add product before login...")
         }
@@ -65,6 +68,7 @@ const Product = () => {
 
     return (
         <div>
+            Product
             <div id='outter'>
                 <div id="inner_left">
                     <img src={singleproduct.image} />
@@ -82,8 +86,6 @@ const Product = () => {
                 <button onClick={logout}>Logout</button>
             </div>
         </div>
-
-
     )
 }
 

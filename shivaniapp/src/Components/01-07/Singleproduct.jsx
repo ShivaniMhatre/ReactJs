@@ -5,7 +5,7 @@ function Singleproduct() {
     const data = useParams();
     console.log(data, "-data here")
     return (
-        <div>
+        <div style={{margin:'15vh'}}>
             {data && data.shivani}
         </div>
     )

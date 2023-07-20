@@ -2,6 +2,24 @@
     color: red;
 }
 
-#myId {
-    border: 1px solid red;
+#home_body {
+    margin-top: 15vh;
+}
+#home_body>h1{
+    text-align: center;
+}
+
+#home_img{
+    width: 80%;
+    height: 70vh;
+    border: 1px solid lightcoral;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px lightcoral;
+}
+#home_img>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
