@@ -36,6 +36,7 @@ import Practice_Multiple from './Components/practice/Practice_Multiple';
 import Login from './Components/15-07/Login';
 import Register from './Components/15-07/Register';
 import Cart from './Components/18-07/Cart';
+import Profile from './Components/19-07/Profile';
 
 
 
@@ -93,6 +94,7 @@ function App() {
         <Route exact path="/register" element={<Register />} />
         {/* 18-07 */}
         <Route exact path="/cart" element={<Cart/>}/>
+        <Route exact path="/profile" element={<Profile/>}/>
       </Routes>
       <Footer />
     </div>

@@ -1,37 +1,37 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import './../Components/practice/Practice.css'
 import './Navbar.css'
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "./../context/Authcontext";
 
 const Navbar = () => {
-    const [user, setUser] = useState({});
-    const[userName,setUserName]=useState([]);
+    const { state, login, logout } = useContext(AuthContext);
+    console.log(state, "State from context in navbar file");
 
+    const [user, setUser] = useState({});
     const router = useNavigate()
+    console.log(user.name,"-User")
 
     useEffect(() => {
-        const isUserPresent = JSON.parse(localStorage.getItem("Current-user"));
-        if (isUserPresent) {
-            setUser(isUserPresent)
+        if (state?.user) {
+            setUser(state?.user)
         }
-    });
+        else {
+            setUser({})
+        }
+    }, [state]);
+
     
-
-    function logout() {
-        localStorage.removeItem("Current-user")
-        setUser({});
-        router('/');
-    }
-
     return (
         <div id='navbar'>
             <div id='nav_logo'>
                 <h1>Awdiz</h1>
             </div>
             <div id='nav_pro'>
-                {user?.email ?
+                {state?.user?.email ?
                     <>
-                        <h3>Profile</h3>
+                        <h3 onClick={()=>router('/profile')}>Profile</h3>
+                        <h3 style={{ marginLeft: '20px' }}>Hello,<span style={{fontSize:'16px',color:'red'}}>{user.name}</span></h3>
                         <h3 style={{ marginLeft: '20px' }} onClick={() => router('/product-from-backend')}>Product</h3>
                         <h3 style={{ marginLeft: '20px' }} onClick={() => router('/cart')}>Cart</h3>
                        
@@ -41,7 +41,7 @@ const Navbar = () => {
                     :
                     <h3 onClick={() => router('/login')}>Login</h3>
                 }
-                
+
 
             </div>
         </div>

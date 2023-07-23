@@ -23,3 +23,19 @@
     height: 100%;
     border-radius: 10px;
 }
+#home_btn{
+    width: 10%;
+    height: 5vh;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+}
+#home_btn>button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: skyblue;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
